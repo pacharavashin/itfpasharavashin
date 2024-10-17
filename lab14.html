@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="icon" type="image/x-icon" href="https://media.tenor.com/w5L7nCy8d8MAAAAj/dizeno0025-sticker-oi-oi-oi.gif">
+    <link rel="stylesheet" type="text/css" href="style2.css"/> 
+</head>
+<body>
+    <nav>
+        <div class="container">
+          <div class="nav-con">
+            <ul class="menu">
+              <li><a href="index.html">OIOIOI'S HOME</a></li>
+            </ul>
+          </div>
+        </div>  
+      </nav>
+    <h1><span class="username" id="username">oioioi</span>'s Phone Book</h1>
+    <div class="avatar" id="avatar">
+        <div class="notification">1</div>
+    </div>
+    <div>
+        <label for="usernameInput">Set the Username</label>
+        <input type="text" id="usernameInput" placeholder="Enter Username">
+        <button onclick="setUsername()">SET</button>
+    </div>
+    <div>
+        <label for="avatarInput">Set the proflie image URL</label>
+        <input type="text" id="avatarInput" placeholder="Enter Image URL">
+        <button onclick="setAvatar()">SET</button>
+    </div>
+    <h3>Phone Number List</h3>
+    <div>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="tel" id="phoneInput" placeholder="Tel">
+        <button onclick="addContact()">ADD</button>
+        <button onclick="exportContacts()">EXPORT</button>
+    </div>
+    <table id="contactTable">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+    </table>
+    <footer>
+        <p>oioioi</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
